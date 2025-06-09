@@ -22,7 +22,7 @@ class Programa:
         self.app.run(debug=True)
     
     def buscarTodos(self):
-        return "To Do: Tengo que buscar en los registrors de la tabla"
+        return render_template('mostrarTodos.html', estudiantes=Estudiante.query.all())
     
     def agregar(self):
         
